@@ -1,0 +1,18 @@
+# Eclipse project files
+.project
+.classpath
+.settings/
+# Test output directories
+test-output/
+surefire-reports/
+allure-results/
+# Logs
+*.log
+logs/
+# Temp files
+*.tmp
+*.bak
+*~
+# Jenkins-specific files
+jenkins-reports/
+/bin/

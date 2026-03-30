@@ -1,0 +1,5 @@
+com\qa\orangeHrm\testcases\RegisterTest2.class
+com\qa\orangeHrm\testcases\RegisterFailedTest.class
+com\qa\orangeHrm\testcases\RegisterTest.class
+com\qa\orangeHrm\Base\BaseTest.class
+com\qa\orangeHrm\testcases\WelcomeTest.class

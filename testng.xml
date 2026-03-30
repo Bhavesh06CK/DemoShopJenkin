@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="UI_Automation" thread-count="2" verbose="4" parallel="tests">
+
+	<test name="Chrome">
+		<parameter name="browserNameXml" value="${browser}" />
+		<parameter name="headlessModeXml" value="${headless}" />
+		<parameter name="privateModeXml" value="${incognito}" />
+
+		<classes>
+			<class name="com.qa.orangeHrm.testcases.WelcomeTest" />
+			<class name="com.qa.orangeHrm.testcases.RegisterTest2" />
+		</classes>
+	</test>
+
+	<test name="Edge">
+		<parameter name="browserNameXml" value="${browser}" />
+		<parameter name="headlessModeXml" value="${headless}" />
+		<parameter name="privateModeXml" value="${incognito}" />
+
+		<classes>
+			<class name="com.qa.orangeHrm.testcases.WelcomeTest" />
+			<class name="com.qa.orangeHrm.testcases.RegisterTest2" />
+		</classes>
+	</test>
+
+</suite>
