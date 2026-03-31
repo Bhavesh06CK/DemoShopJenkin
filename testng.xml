@@ -11,6 +11,7 @@
 		<classes>
 			<class name="com.qa.orangeHrm.testcases.WelcomeTest" />
 			<class name="com.qa.orangeHrm.testcases.RegisterTest2" />
+			<class name="com.qa.orangeHrm.testcases.JenkinsTest" /> 
 		</classes>
 	</test>
 
