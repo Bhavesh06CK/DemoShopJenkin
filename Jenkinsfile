@@ -79,7 +79,28 @@ pipeline {
                 }
             }
         }
-
+        
+        stage('Debug ChainTest Report'){
+        steps{
+        	bat 'dir target /s'
+        }
+        }
+        
+		stage ('Publish ChainTest HTML Report') {
+		steps {
+			publishHTML([
+			allowMissing : true,
+			alwaysLinkToLastBuild: false,
+			keepAll:true,
+			reportDir: 'target/chaintest',
+			reportFiles: 'index.html',
+			reportName: 'HTML Regression ChainTest Report',
+			reportTitles: 'DemoShopUI_Automation'
+			])
+		}
+		}
+        
+        
         stage('Archive Reports') {
             steps {
                 archiveArtifacts artifacts: 'target/**/*', fingerprint: true
