@@ -10,5 +10,6 @@ public class JenkinsTest extends BaseTest{
 	public static void main(String[] args)  {
 		System.out.println("Testing for NG_Testing and Jenkins");
 		Reporter.log("Testing for NG_Testing and Jenkins");
+		Reporter.log("Trail Runs");
 	}
 }
