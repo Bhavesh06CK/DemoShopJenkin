@@ -7,7 +7,7 @@ pipeline {
     }
 
     parameters {
-        string(name: 'suiteXmlFile', defaultValue: 'testng.xml')
+        string(name: 'suiteXmlFile', defaultValue: 'Failedtestng.xml')
         choice(name: 'browser', choices: ['chrome', 'firefox', 'edge'])
         booleanParam(name: 'headless', defaultValue: true)
         booleanParam(name: 'incognito', defaultValue: true)
