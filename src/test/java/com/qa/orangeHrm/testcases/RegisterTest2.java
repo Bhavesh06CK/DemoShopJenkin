@@ -29,6 +29,7 @@ public class RegisterTest2 extends BaseTest{
 		String msg=rp.createUser(fn, ln, email, psw);
 		assertEquals(msg, "Your registration completed");
 		Reporter.log("Assert Successful user created", true);//testng Report
+		Reporter.log("Assert Successful user created Rechecked", true);//testng Report
 		ChainTestListener.log("Assert Successful user created");//chainTest Report
 		closeApplication();
 	}
